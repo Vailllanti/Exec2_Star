@@ -29,6 +29,7 @@ namespace 星型三角形
 			{
 				MessageBox.Show(ex.Message);
 			}
+			
 			string result = LiftTri(rows);
 			Display(result);
 		}
@@ -44,6 +45,7 @@ namespace 星型三角形
 			{
 				MessageBox.Show(ex.Message);
 			}
+			
 			string stars = Tri(rows);
 			Display(stars);
 		}
@@ -59,6 +61,7 @@ namespace 星型三角形
 			{
 				MessageBox.Show(ex.Message);
 			}
+			
 			string result = RightTri(rows);
 			Display(result);
 		}
@@ -80,7 +83,6 @@ namespace 星型三角形
 			return rows;
 		}
 
-
 		private string LiftTri(int rows)
 		{
 			string result = string.Empty;
@@ -91,7 +93,6 @@ namespace 星型三角形
 			}
 			return result;
 		}
-
 
 		private string Tri(int rows)
 		{
