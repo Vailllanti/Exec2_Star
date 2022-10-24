@@ -39,21 +39,23 @@
 			// btnLiftTri
 			// 
 			this.btnLiftTri.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-			this.btnLiftTri.Location = new System.Drawing.Point(246, 17);
+			this.btnLiftTri.Location = new System.Drawing.Point(328, 21);
+			this.btnLiftTri.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
 			this.btnLiftTri.Name = "btnLiftTri";
-			this.btnLiftTri.Size = new System.Drawing.Size(103, 41);
+			this.btnLiftTri.Size = new System.Drawing.Size(137, 51);
 			this.btnLiftTri.TabIndex = 0;
 			this.btnLiftTri.Text = "靠左三角形";
 			this.btnLiftTri.UseVisualStyleBackColor = true;
-			this.btnLiftTri.Click += new System.EventHandler(this.btnLiftTri);
+			this.btnLiftTri.Click += new System.EventHandler(this.BtnLiftTri);
 			// 
 			// txtbRow
 			// 
-			this.txtbRow.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-			this.txtbRow.Location = new System.Drawing.Point(142, 24);
+			this.txtbRow.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+			this.txtbRow.Location = new System.Drawing.Point(189, 30);
+			this.txtbRow.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
 			this.txtbRow.MaxLength = 2;
 			this.txtbRow.Name = "txtbRow";
-			this.txtbRow.Size = new System.Drawing.Size(87, 29);
+			this.txtbRow.Size = new System.Drawing.Size(115, 34);
 			this.txtbRow.TabIndex = 1;
 			// 
 			// txtbDisplay
@@ -61,57 +63,63 @@
 			this.txtbDisplay.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this.txtbDisplay.Location = new System.Drawing.Point(40, 74);
+			this.txtbDisplay.Font = new System.Drawing.Font("Courier New", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtbDisplay.Location = new System.Drawing.Point(53, 92);
+			this.txtbDisplay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
 			this.txtbDisplay.Multiline = true;
 			this.txtbDisplay.Name = "txtbDisplay";
 			this.txtbDisplay.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-			this.txtbDisplay.Size = new System.Drawing.Size(598, 270);
+			this.txtbDisplay.Size = new System.Drawing.Size(796, 336);
 			this.txtbDisplay.TabIndex = 1;
 			this.txtbDisplay.WordWrap = false;
 			// 
 			// btnRightTri
 			// 
 			this.btnRightTri.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-			this.btnRightTri.Location = new System.Drawing.Point(484, 17);
+			this.btnRightTri.Location = new System.Drawing.Point(645, 21);
+			this.btnRightTri.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
 			this.btnRightTri.Name = "btnRightTri";
-			this.btnRightTri.Size = new System.Drawing.Size(103, 41);
+			this.btnRightTri.Size = new System.Drawing.Size(137, 51);
 			this.btnRightTri.TabIndex = 0;
 			this.btnRightTri.Text = "靠右三角形";
 			this.btnRightTri.UseVisualStyleBackColor = true;
-			this.btnRightTri.Click += new System.EventHandler(this.btnRightTri);
+			this.btnRightTri.Click += new System.EventHandler(this.BtnRightTri);
 			// 
 			// btnTri
 			// 
 			this.btnTri.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-			this.btnTri.Location = new System.Drawing.Point(365, 17);
+			this.btnTri.Location = new System.Drawing.Point(487, 21);
+			this.btnTri.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
 			this.btnTri.Name = "btnTri";
-			this.btnTri.Size = new System.Drawing.Size(103, 41);
+			this.btnTri.Size = new System.Drawing.Size(137, 51);
 			this.btnTri.TabIndex = 0;
 			this.btnTri.Text = "等腰三角形";
 			this.btnTri.UseVisualStyleBackColor = true;
-			this.btnTri.Click += new System.EventHandler(this.btnTri);
+			this.btnTri.Click += new System.EventHandler(this.BtnTri);
 			// 
 			// lblRow
 			// 
 			this.lblRow.AutoSize = true;
 			this.lblRow.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-			this.lblRow.Location = new System.Drawing.Point(36, 27);
+			this.lblRow.Location = new System.Drawing.Point(48, 34);
+			this.lblRow.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.lblRow.Name = "lblRow";
-			this.lblRow.Size = new System.Drawing.Size(100, 21);
+			this.lblRow.Size = new System.Drawing.Size(122, 25);
 			this.lblRow.TabIndex = 2;
 			this.lblRow.Text = "行數(1~10):";
 			// 
 			// Form1
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(674, 368);
+			this.ClientSize = new System.Drawing.Size(899, 460);
 			this.Controls.Add(this.lblRow);
 			this.Controls.Add(this.txtbDisplay);
 			this.Controls.Add(this.txtbRow);
 			this.Controls.Add(this.btnRightTri);
 			this.Controls.Add(this.btnTri);
 			this.Controls.Add(this.btnLiftTri);
+			this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
 			this.Name = "Form1";
 			this.Text = "Form1";
 			this.ResumeLayout(false);

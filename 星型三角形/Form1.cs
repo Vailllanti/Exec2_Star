@@ -18,83 +18,103 @@ namespace 星型三角形
 			InitializeComponent();
 		}
 
-		private void btnLiftTri(object sender, EventArgs e)
+		private void BtnLiftTri(object sender, EventArgs e)
 		{
+			int rows = 0;
 			try
 			{
-				int rows = GetRow();
+				rows = GetRow();
 			}
 			catch (Exception ex)
 			{
-				MessageBox.Show(ex.ToString());
+				MessageBox.Show(ex.Message);
 			}
-
+			string result = LiftTri(rows);
+			Display(result);
 		}
 
-		private void btnTri(object sender, EventArgs e)
+		private void BtnTri(object sender, EventArgs e)
 		{
+			int rows = 0;
 			try
 			{
-				int rows = GetRow();
+				rows = GetRow();
 			}
 			catch (Exception ex)
 			{
-				MessageBox.Show(ex.ToString());
+				MessageBox.Show(ex.Message);
 			}
+			string stars = Tri(rows);
+			Display(stars);
 		}
 
-		private void btnRightTri(object sender, EventArgs e)
+		private void BtnRightTri(object sender, EventArgs e)
 		{
+			int rows = 0;
 			try
 			{
-				int rows = GetRow();
+				rows = GetRow();
 			}
 			catch (Exception ex)
 			{
-				MessageBox.Show(ex.ToString());
+				MessageBox.Show(ex.Message);
 			}
+			string result = RightTri(rows);
+			Display(result);
 		}
+
 		private int GetRow()
 		{
-			string input = lblRow.Text;
+			string input = txtbRow.Text;
 			bool isInt = int.TryParse(input, out int rows);
+			
 			if (isInt == false)
 			{
 				throw new Exception("請輸入整數");
 			}
 
-			if (rows <= 0)
+			if (rows <= 0 || rows >10)
 			{
-				throw new Exception("請輸入大於0的數");
+				throw new Exception("請輸入介於1~10的數字");
 			}
-
 			return rows;
-
 		}
+
+
 		private string LiftTri(int rows)
 		{
 			string result = string.Empty;
 
-			for (int i = 1; i < rows; i++)
+			for (int i = 1; i <= rows; i++)
 			{
 				result += new string('*', i) + "\r\n";
 			}
 			return result;
 		}
+
+
 		private string Tri(int rows)
 		{
-			if (rows
+			string result = string.Empty;
+
+			for (int i = 1; i <= rows; i++)
+			{
+				result += (new string(' ', rows - i) + new string('*', 2 * i - 1) + "\r\n");
+			}
+			return result;
 		}
+
 		private string RightTri(int rows)
 		{
 			string result = string.Empty;
 
-			for (int i = rows; i < 0; i--)
+			for (int i = 1; i <= rows; i++)
 			{
-				result += new string('*', i) + "\r\n";
+				result += (new string(' ', rows - i) + new string('*', i) + "\r\n");
 			}
 			return result;
 		}
+
 		private void Display(string rows)
 		{
 			txtbDisplay.Text = rows;
